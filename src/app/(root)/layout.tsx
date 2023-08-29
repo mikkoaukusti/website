@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 
 export default function RootLayout({
@@ -6,9 +7,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="py-8 px-8 container">
+    <div className="p-8 container">
       <Navbar />
-      <main className="mt-10">{children}</main>
+      <main className="my-10">{children}</main>
+      <Footer />
     </div>
   );
 }
